@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import SelfPortrait from './components/css/SelfPortrait';
+import SelfPortrait from './components/Css/SelfPortrait';
 
 const App: React.FC = () => {
     return (

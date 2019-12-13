@@ -4,8 +4,9 @@ import './SelfPortrait.scss';
 export interface ISelfPortrait {}
 
 const SelfPortrait: React.FunctionComponent<ISelfPortrait> = () => {
+  //    <div className={'container'} onMouseOver={'makeVisible'}>
   return (
-    <div className={'container'} onMouseOver={'makeVisible'}>
+    <div className={'container'}>
       <div className={'heart'}></div>
       <div className={'avatar-ponytail'}></div>
       <div className={'avatar-body'}>
