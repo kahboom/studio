@@ -8,42 +8,30 @@ import { Field, FieldProps, Form, Formik, FormikHelpers, FormikProps } from 'for
 import Select from 'react-select';
 import { OptionsType, ValueType } from 'react-select/src/types';
 
-import './MultiSelect.scss';
+import './TagSelect.scss';
 
 export interface IMultiSelect {}
 
-
 export interface FormValues {
-  singleLanguage: string;
-  multiLanguages: string[];
+  hosts: string[];
 }
 
 const defaultValues: FormValues = {
-  singleLanguage: '',
-  multiLanguages: []
+  hosts: []
 };
 
-// Some dummy language data
-const languageOptions = [
+const hostOptions = [
   {
-    label: 'Chinese',
-    value: 'zh-CN'
+    label: '172.0.0.1',
+    value: '172.0.0.1'
   },
   {
-    label: 'English (US)',
-    value: 'en-US'
+    label: '172.0.0.2',
+    value: '172.0.0.2'
   },
   {
-    label: 'English (GB)',
-    value: 'en-GB'
-  },
-  {
-    label: 'French',
-    value: 'fr-FR'
-  },
-  {
-    label: 'Spanish',
-    value: 'es-ES'
+    label: '172.0.0.3',
+    value: '172.0.0.3'
   }
 ];
 
@@ -118,18 +106,10 @@ const MultiSelectForm = () => {
     <Form>
       <Field
         className='custom-select'
-        name='singleLanguage'
-        options={languageOptions}
+        name='hosts'
+        options={hostOptions}
         component={CustomSelect}
-        placeholder='Select a language...'
-        isMulti={false}
-      />
-      <Field
-        className='custom-select'
-        name='multiLanguages'
-        options={languageOptions}
-        component={CustomSelect}
-        placeholder='Select multi languages...'
+        placeholder='Select hosts...'
         isMulti={true}
       />
       <button
@@ -140,7 +120,7 @@ const MultiSelectForm = () => {
       >
         Reset
       </button>
-      <button type='submit'>Submit Form</button>
+      <button type='submit'>Submit</button>
     </Form>
   );
 
@@ -157,7 +137,7 @@ const TagSelect: React.FunctionComponent<IMultiSelect> = () => {
   return (
 
     <div className='app'>
-      <h1 className='title'>Mutliselect form</h1>
+      <h1 className='title'>Mutliselect form with tags</h1>
       <p className='subtitle'>
         Using{' '}
         <a
