@@ -11,7 +11,7 @@ const SelfPortrait: React.FunctionComponent<ISelfPortrait> = () => {
       <div className={'avatar-ponytail'}></div>
       <div className={'avatar-body'}>
         <div className={'shirt-button'}></div>
-        <div className={'heart-button'}><p>&#10084</p></div>
+        <div className={'heart-button'}>&#10084</div>
       </div>
       <div className={'avatar-hair'}></div>
       <div className={'avatar-head'}></div>
