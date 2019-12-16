@@ -143,7 +143,7 @@ const TagSelect: React.FunctionComponent<IMultiSelect> = () => {
         <a
           href='https://github.com/jaredpalmer/formik'
           target='_blank'
-          rel='noopener'
+          rel='noopener noreferrer'
         >
           Formik
         </a>{' '}
@@ -151,7 +151,7 @@ const TagSelect: React.FunctionComponent<IMultiSelect> = () => {
         <a
           href='https://github.com/JedWatson/react-select'
           target='_blank'
-          rel='noopener'
+          rel='noopener noreferrer'
         >
           react-select
         </a>
