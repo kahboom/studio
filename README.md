@@ -3,8 +3,8 @@
 - [x] create-react-app w/ typescript
 - [x] netlify
 - [x] storybook
-- [ ] build storybook, netlify
-- [ ] license
+- [ ] build storybook, deploy w/ netlify
+- [x] license
 - [ ] better ts-lint
 - [ ] built-in hooks
 - [ ] custom hooks
